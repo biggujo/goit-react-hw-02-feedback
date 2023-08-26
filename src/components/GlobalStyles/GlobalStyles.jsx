@@ -22,5 +22,9 @@ export function GlobalStyles() {
 
       list-style: none;
     }
+
+    p {
+      font-size: 18px;
+    }
   `} />);
 }
