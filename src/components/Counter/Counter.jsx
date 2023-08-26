@@ -10,6 +10,9 @@ export function Counter({
 }
 
 Counter.propTypes = {
-  value: PropTypes.number.isRequired,
+  value: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+  ]).isRequired,
   children: PropTypes.string.isRequired,
 };
