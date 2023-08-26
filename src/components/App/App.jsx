@@ -3,6 +3,7 @@ import { Subtitle, Title, Wrapper } from './App.styled';
 import { GlobalStyles } from '../GlobalStyles';
 import { Counter } from '../Counter';
 import { Button } from '../Button';
+import { Statistics } from '../Statistics/Statistics';
 
 export class App extends Component {
   state = {
@@ -53,11 +54,11 @@ export class App extends Component {
           onClick={() => this.incrementFeedback('bad')}>Bad</Button>
 
         <Subtitle>Statistics</Subtitle>
-        <Counter value={good}>Good</Counter>
-        <Counter value={neutral}>Neutral</Counter>
-        <Counter value={bad}>Bad</Counter>
-        <Counter value={total}>Total</Counter>
-        <Counter value={positivePercentage}>Positive feedback</Counter>
+        <Statistics good={good}
+                    neutral={neutral}
+                    bad={bad}
+                    total={total}
+                    positivePercentage={positivePercentage} />
       </Wrapper>
 
       <GlobalStyles />
