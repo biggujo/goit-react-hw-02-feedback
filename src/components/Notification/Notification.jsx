@@ -2,7 +2,7 @@ import React from 'react';
 import { AccentText } from './Notification.styled';
 import PropTypes from 'prop-types';
 
-export function Notification({ message }) {
+export default function Notification({ message }) {
   return (<AccentText>{message}</AccentText>);
 }
 

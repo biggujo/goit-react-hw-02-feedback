@@ -1,8 +1,8 @@
 import React from 'react';
-import { Counter } from '../Counter';
+import Counter from '../Counter';
 import PropTypes from 'prop-types';
 
-export function Statistics({
+export default function Statistics({
   good,
   neutral,
   bad,

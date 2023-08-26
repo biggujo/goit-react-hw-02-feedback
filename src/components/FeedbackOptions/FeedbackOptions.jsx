@@ -1,9 +1,9 @@
 import React from 'react';
-import { Button } from '../Button';
+import Button from '../Button';
 import { List } from './FeedbackOptions.styled';
 import PropTypes from 'prop-types';
 
-export function FeedbackOptions({
+export default function FeedbackOptions({
   options,
   onLeaveFeedback,
 }) {

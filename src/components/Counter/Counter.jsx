@@ -2,7 +2,7 @@ import React from 'react';
 import { Text } from './Counter.styled';
 import PropTypes from 'prop-types';
 
-export function Counter({
+export default function Counter({
   value,
   children: title,
 }) {

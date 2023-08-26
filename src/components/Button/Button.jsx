@@ -2,7 +2,7 @@ import React from 'react';
 import { ButtonStyled } from './Button.styled';
 import PropTypes from 'prop-types';
 
-export function Button({
+export default function Button({
   children,
   onClick,
 }) {

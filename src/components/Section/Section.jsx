@@ -2,7 +2,7 @@ import React from 'react';
 import { Subtitle } from './Section.styled';
 import PropTypes from 'prop-types';
 
-export function Section({
+export default function Section({
   title,
   children,
 }) {

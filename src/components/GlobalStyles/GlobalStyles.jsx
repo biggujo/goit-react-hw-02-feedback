@@ -1,7 +1,7 @@
 import React from 'react';
 import { css, Global } from '@emotion/react';
 
-export function GlobalStyles() {
+export default function GlobalStyles() {
   return (<Global styles={css`
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
