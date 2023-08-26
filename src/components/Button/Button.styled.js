@@ -5,6 +5,7 @@ export const ButtonStyled = styled.button`
   padding: 5px;
 
   font-size: 14px;
+  text-transform: capitalize;
 
   background-color: #ffffff;
   border: 1px solid #d3d3d3;

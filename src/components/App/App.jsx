@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { Subtitle, Title, Wrapper } from './App.styled';
 import { GlobalStyles } from '../GlobalStyles';
-import { Counter } from '../Counter';
-import { Button } from '../Button';
 import { Statistics } from '../Statistics/Statistics';
+import { FeedbackOptions } from '../FeedbackOptions/FeedbackOptions';
 
 export class App extends Component {
   state = {
@@ -47,11 +46,8 @@ export class App extends Component {
         <Title>Feedback collector</Title>
 
         <Subtitle>Please leave a feedback</Subtitle>
-        <Button onClick={() => this.incrementFeedback('good')}>Good</Button>
-        <Button
-          onClick={() => this.incrementFeedback('neutral')}>Neutral</Button>
-        <Button
-          onClick={() => this.incrementFeedback('bad')}>Bad</Button>
+        <FeedbackOptions options={this.state}
+                         onLeaveFeedback={this.incrementFeedback} />
 
         <Subtitle>Statistics</Subtitle>
         <Statistics good={good}

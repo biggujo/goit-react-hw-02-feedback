@@ -15,5 +15,12 @@ export function GlobalStyles() {
       font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
     }
+
+    ul, ol {
+      margin: 0;
+      padding: 0;
+
+      list-style: none;
+    }
   `} />);
 }
