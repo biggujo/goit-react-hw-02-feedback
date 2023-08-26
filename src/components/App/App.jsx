@@ -3,6 +3,7 @@ import { Subtitle, Title, Wrapper } from './App.styled';
 import { GlobalStyles } from '../GlobalStyles';
 import { Statistics } from '../Statistics/Statistics';
 import { FeedbackOptions } from '../FeedbackOptions/FeedbackOptions';
+import { Section } from '../Section/Section';
 
 export class App extends Component {
   state = {
@@ -45,16 +46,18 @@ export class App extends Component {
       <Wrapper>
         <Title>Feedback collector</Title>
 
-        <Subtitle>Please leave a feedback</Subtitle>
-        <FeedbackOptions options={this.state}
-                         onLeaveFeedback={this.incrementFeedback} />
+        <Section title='Please leave a feedback'>
+          <FeedbackOptions options={this.state}
+                           onLeaveFeedback={this.incrementFeedback} />
+        </Section>
 
-        <Subtitle>Statistics</Subtitle>
-        <Statistics good={good}
-                    neutral={neutral}
-                    bad={bad}
-                    total={total}
-                    positivePercentage={positivePercentage} />
+        <Section title='Statistics'>
+          <Statistics good={good}
+                      neutral={neutral}
+                      bad={bad}
+                      total={total}
+                      positivePercentage={positivePercentage} />
+        </Section>
       </Wrapper>
 
       <GlobalStyles />
